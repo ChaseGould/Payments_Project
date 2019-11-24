@@ -1,5 +1,23 @@
 <form #form="ngForm" autocomplete="off">
     <div class="form-group">
-        <input name="CardOwnerName" #CardOwnerName="ngModel" [(ngModel)]="service.formData.CardOwnerName" class="form-control" placeholder="Card Owner Name">
+        <input name="CardOwnerName" #CardOwnerName="ngModel" [(ngModel)]="service.formData.CardOwnerName" class="form-control"
+         placeholder="Card Owner Name" required>
+    </div>
+    <div class="form-group">
+        <input name="CardNumber" #CardNumber="ngModel" [(ngModel)]="service.formData.CardNumber" class="form-control" 
+        placeholder="Card Number" required>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-7">
+            <input name="ExpirationDate" #ExpirationDate="ngModel" [(ngModel)]="service.formData.ExpirationDate" class="form-control" 
+            placeholder="MM/YY" required>
+        </div>
+        <div class="form-group col-md-5">
+            <input type="password" name="CVV" #CVV="ngModel" [(ngModel)]="service.formData.CVV" class="form-control" 
+            placeholder="CVV" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-bloc" type="submit">Submit</button>
     </div>
 </form>
