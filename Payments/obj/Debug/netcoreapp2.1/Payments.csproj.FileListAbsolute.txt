@@ -14,3 +14,4 @@ C:\Users\Chase\source\repos\Payments\Payments\obj\Debug\netcoreapp2.1\Payments.c
 C:\Users\Chase\source\repos\Payments\Payments\bin\Debug\netcoreapp2.1\Payments.pdb
 C:\Users\Chase\source\repos\Payments\Payments\obj\Debug\netcoreapp2.1\Payments.dll
 C:\Users\Chase\source\repos\Payments\Payments\obj\Debug\netcoreapp2.1\Payments.pdb
+C:\Users\Chase\source\repos\Payments\Payments\bin\Debug\netcoreapp2.1\libman.json

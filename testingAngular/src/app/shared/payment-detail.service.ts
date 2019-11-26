@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Injectable, RootRenderer } from '@angular/core';
 import { PaymentDetail } from './payment-detail.model';
-import { HttpClient, HttpRequest } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -8,10 +8,10 @@ import { HttpClient, HttpRequest } from "@angular/common/http";
 export class PaymentDetailService {
 
   formData:PaymentDetail
-
-  constructor() { }
+  readonly rootURL = 'https://localhost:44309/api'
+  constructor(private http:HttpClient) { }
 
   postPaymentDetail(formData:PaymentDetail){
-
+    return this.http.post(this.rootURL+'/PaymentDetails',formData)
   }
 }

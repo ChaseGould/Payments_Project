@@ -28,6 +28,13 @@ export class PaymentDetailComponent implements OnInit {
   }
 
   onSubmit(form:NgForm){
-    form.value
+    this.service.postPaymentDetail(form.value).subscribe(
+      res => {
+        this.resetForm(form);
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
 }
