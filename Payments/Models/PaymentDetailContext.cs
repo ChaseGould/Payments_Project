@@ -30,7 +30,7 @@ namespace Payments.Models
         {
             modelBuilder.Entity<PaymentDetails>(entity =>
             {
-                entity.Property(e => e.Pmid).ValueGeneratedNever();
+                entity.Property(e => e.Pmid).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.CardNumber).IsUnicode(false);
 
