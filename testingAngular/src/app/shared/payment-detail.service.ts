@@ -9,9 +9,17 @@ export class PaymentDetailService {
 
   formData:PaymentDetail
   readonly rootURL = 'https://localhost:44309/api'
+  list : PaymentDetail[];
+
   constructor(private http:HttpClient) { }
 
   postPaymentDetail(formData:PaymentDetail){
     return this.http.post(this.rootURL+'/PaymentDetails',formData)
+  }
+
+  refreshList(){
+    this.http.get(this.rootURL+'/PaymentDetails')
+    .toPromise()
+    .then(res => this.list = res as PaymentDetail[]);
   }
 }
