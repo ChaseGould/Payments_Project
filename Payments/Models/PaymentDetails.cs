@@ -9,7 +9,7 @@ namespace Payments.Models
     {
         [Key]
         [Column("PMId")]
-        public int Pmid { get; set; }
+        public int PMId { get; set; }
         [Required]
         [StringLength(100)]
         public string CardOwnerName { get; set; }

@@ -55,7 +55,7 @@ namespace Payments.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != paymentDetails.Pmid)
+            if (id != paymentDetails.PMId)
             {
                 return BadRequest();
             }
@@ -97,7 +97,7 @@ namespace Payments.Controllers
             }
             catch (DbUpdateException)
             {
-                if (PaymentDetailsExists(paymentDetails.Pmid))
+                if (PaymentDetailsExists(paymentDetails.PMId))
                 {
                     return new StatusCodeResult(StatusCodes.Status409Conflict);
                 }
@@ -107,7 +107,7 @@ namespace Payments.Controllers
                 }
             }
 
-            return CreatedAtAction("GetPaymentDetails", new { id = paymentDetails.Pmid }, paymentDetails);
+            return CreatedAtAction("GetPaymentDetails", new { id = paymentDetails.PMId }, paymentDetails);
         }
 
         // DELETE: api/PaymentDetails/5
@@ -133,7 +133,7 @@ namespace Payments.Controllers
 
         private bool PaymentDetailsExists(int id)
         {
-            return _context.PaymentDetails.Any(e => e.Pmid == id);
+            return _context.PaymentDetails.Any(e => e.PMId == id);
         }
     }
 }
