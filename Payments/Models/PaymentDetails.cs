@@ -22,6 +22,6 @@ namespace Payments.Models
         [Required]
         [Column("CVV")]
         [StringLength(3)]
-        public string Cvv { get; set; }
+        public string CVV { get; set; }
     }
 }

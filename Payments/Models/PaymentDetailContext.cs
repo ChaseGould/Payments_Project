@@ -34,7 +34,7 @@ namespace Payments.Models
 
                 entity.Property(e => e.CardNumber).IsUnicode(false);
 
-                entity.Property(e => e.Cvv).IsUnicode(false);
+                entity.Property(e => e.CVV).IsUnicode(false);
 
                 entity.Property(e => e.ExpirationDate).IsUnicode(false);
             });
