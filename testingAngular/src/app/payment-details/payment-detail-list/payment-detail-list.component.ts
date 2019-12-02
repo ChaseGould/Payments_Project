@@ -19,4 +19,16 @@ export class PaymentDetailListComponent implements OnInit {
     this.service.formData = Object.assign({},pd);
   }
 
+  onDelete(PMId){
+    if(confirm('Are you sure you want to delete this record?')){
+      this.service.deletePaymentDetail(PMId)
+      .subscribe(res =>{
+        this.service.refreshList();
+      },
+        err=>{
+          console.log(err);
+        })
+      }
+  }
+
 }
