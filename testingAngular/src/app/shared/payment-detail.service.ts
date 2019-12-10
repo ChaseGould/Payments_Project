@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
 export class PaymentDetailService {
 
   formData:PaymentDetail
-  readonly rootURL ='https://586projectwebapp.azurewebsites.net/api/paymentdetails'
+  readonly rootURL ='https://586projectwebapp.azurewebsites.net/api/'
   list : PaymentDetail[];
 
   constructor(private http:HttpClient) { }
