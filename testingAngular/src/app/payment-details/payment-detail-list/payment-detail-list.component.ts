@@ -9,7 +9,7 @@ import { PaymentDetail } from 'src/app/shared/payment-detail.model';
 })
 export class PaymentDetailListComponent implements OnInit {
 
-  constructor(private service: PaymentDetailService) { }
+  constructor(public service: PaymentDetailService) { }
 
   ngOnInit() {
     this.service.refreshList();

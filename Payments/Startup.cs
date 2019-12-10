@@ -37,7 +37,7 @@ namespace Payments
                 });
 
             services.AddDbContext<PaymentDetailContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnectionAzure")));
 
             services.AddCors();
         }
@@ -55,6 +55,10 @@ namespace Payments
             }
 
             app.UseHttpsRedirection();
+
+            //from deployment instructions
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseCors(options =>
             options.WithOrigins("http://localhost:4200")
