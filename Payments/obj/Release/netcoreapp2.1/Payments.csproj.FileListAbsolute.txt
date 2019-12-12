@@ -1,0 +1,17 @@
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\appsettings.Development.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\appsettings.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\libman.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\Payments.deps.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\Payments.runtimeconfig.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\Payments.runtimeconfig.dev.json
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\Payments.dll
+C:\Users\Chase\source\repos\Payments\Payments\bin\Release\netcoreapp2.1\Payments.pdb
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.csprojAssemblyReference.cache
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.RazorAssemblyInfo.cache
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.RazorAssemblyInfo.cs
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.AssemblyInfoInputs.cache
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.AssemblyInfo.cs
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.RazorTargetAssemblyInfo.cache
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.dll
+C:\Users\Chase\source\repos\Payments\Payments\obj\Release\netcoreapp2.1\Payments.pdb
