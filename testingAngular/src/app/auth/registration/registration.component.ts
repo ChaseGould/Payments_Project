@@ -12,8 +12,9 @@ export class RegistrationComponent implements OnInit {
   constructor(private auth: AuthService) { }
 
   ngOnInit() {
-   
-  
+    this.auth.eventAuthError$.subscribe( data => {
+      this.authError = data;
+    })
   }
 
   createUser(frm) {

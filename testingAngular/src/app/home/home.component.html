@@ -1,13 +1,13 @@
 <h4 class="mt-4">Home Page</h4>
   
-<p *ngIf="false">Logged in as: {{ user?.email }} - {{ user?.displayName }}</p>
+<p *ngIf="user">Logged in as: {{ user?.email }} - {{ user?.displayName }}</p>
 
-<button class="btn btn-primary mr-2" *ngIf="true" (click)="register()">Register</button>
+<button class="btn btn-primary mr-2" *ngIf="!user" (click)="register()">Register</button>
 <button class="btn btn-primary" *ngIf="user" (click)="logout()">Logout</button>
-<button class="btn btn-primary" *ngIf="true" (click)="login()">Login</button>
+<button class="btn btn-primary" *ngIf="!user" (click)="login()">Login</button>
 
-<div class="jumbtron" *ngIf="true">
-        <h1 class="display-4 text-center">Payment Detail Locker</h1>
+<div class="jumbtron" *ngIf="user">
+        <h1 class="display-4 text-center">Credit Card Detail Locker</h1>
         <hr>
         <div class="row">
             <div class="col-md-5">
