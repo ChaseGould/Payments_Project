@@ -4,9 +4,8 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
-import { PaymentDetailsComponent } from './payment-details/payment-details.component';
-import { PaymentDetailComponent } from './payment-details/payment-detail/payment-detail.component';
-import { PaymentDetailListComponent } from './payment-details/payment-detail-list/payment-detail-list.component';
+import { PaymentDetailComponent } from './home/payment-detail/payment-detail.component';
+import { PaymentDetailListComponent } from './home/payment-detail-list/payment-detail-list.component';
 import { PaymentDetailService } from './shared/payment-detail.service';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -31,7 +30,6 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    PaymentDetailsComponent,
     PaymentDetailComponent,
     PaymentDetailListComponent,
     RegistrationComponent,

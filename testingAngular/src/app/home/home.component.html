@@ -2,9 +2,12 @@
   
 <p *ngIf="user">Logged in as: {{ user?.email }} - {{ user?.displayName }}</p>
 
-<button class="btn btn-primary mr-2" *ngIf="!user" (click)="register()">Register</button>
-<button class="btn btn-primary" *ngIf="user" (click)="logout()">Logout</button>
-<button class="btn btn-primary" *ngIf="!user" (click)="login()">Login</button>
+<div class="buttons">
+    <button class="btn btn-primary mr-2" *ngIf="!user" (click)="register()">Register</button>
+    <button class="btn btn-primary" *ngIf="user" (click)="logout()">Logout</button>
+    <button class="btn btn-primary" *ngIf="!user" (click)="login()">Login</button>
+</div>
+
 
 <div class="jumbtron" *ngIf="user">
         <h1 class="display-4 text-center">Credit Card Detail Locker</h1>
