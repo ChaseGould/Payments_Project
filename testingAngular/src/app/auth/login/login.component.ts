@@ -20,5 +20,6 @@ export class LoginComponent implements OnInit {
   login(frm) {
     this.auth.login(frm.value.email, frm.value.password);
   }
+  
 
 }
