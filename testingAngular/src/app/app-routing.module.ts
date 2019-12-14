@@ -7,6 +7,11 @@ const routes: Routes = [
   {
     path: 'home',
     component: PaymentDetailsComponent
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
