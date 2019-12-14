@@ -37,7 +37,7 @@ namespace Payments
                 });
 
             services.AddDbContext<PaymentDetailContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnectionAzure")));
 
             services.AddCors();
         }
