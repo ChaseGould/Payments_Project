@@ -15,6 +15,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { RegistrationComponent } from './auth/registration/registration.component';
 import { LoginComponent } from './auth/login/login.component';
+import { HomeComponent } from './home/home.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAilWKb9vw5VWTGZNV0WNTmiLtYbo5uhug",
@@ -34,7 +35,8 @@ const firebaseConfig = {
     PaymentDetailComponent,
     PaymentDetailListComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

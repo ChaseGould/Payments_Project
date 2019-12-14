@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegistrationComponent } from './auth/registration/registration.component';
 
 const routes: Routes = [
   {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegistrationComponent
+  },
+  {
     path: 'home',
-    component: PaymentDetailsComponent
+    component: HomeComponent
   },
   {
     path: '',
