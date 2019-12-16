@@ -1,6 +1,6 @@
-#Comp 586 Project
-##By Chase Gould
-##12/16/2019
+# Comp 586 Project
+## By Chase Gould
+## 12/16/2019
 
 ##Requirements
 1.	Authentication – Authentication is completed using the third-party service Firebase Authentication. To accomplish the authentication feature I implemented the Firebase sdk within my Angular Project. The authentication feature does not communicate with my ASP.NET Core Web API. Instead my authentication feature communicates with a database that I have hosted in firebase. I can manage registered users accounts from the firebase console which I can access from the web. Upon visiting my webpage users can register accounts and login to their accounts. To my understanding implementing a third-party authentication service is worth extra credit.
