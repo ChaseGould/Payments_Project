@@ -9,8 +9,8 @@
 4.	Dependency Injection – Dependency Injection is present in both the Client and Web API applications.
 5.	Deployment – Azure is used to deploy the Client Application, Web API, and a SQL Database. Firebase is used to deploy a NOSQL database which is used by the authentication service.
 ## Usage
-Webpage is hosted at https://586webapp2.azurewebsites.net/
-API is hosted at https://586webapp2.azurewebsites.net/api/PaymentDetails
+### Webpage is hosted at https://586webapp2.azurewebsites.net/
+### API is hosted at https://586webapp2.azurewebsites.net/api/PaymentDetails
 Upon visiting the web page, the user will encounter the home page with the options to Register or Login. Users who have previously registered can select the login button. Users who have not previously registered will need to select register. When filling out the registration form it is not necessary for the user to use their real email address. I recommend that users do not enter a combination of a real email address and password that they use for other accounts as I cannot guarantee that my web page is secure. Upon successful registration users are automatically logged into the web page. The web page allows users to store their credit card information. Users can place a new entry, modify an existing entry, or delete an existing entry. To place a new entry, fill out the form and click submit. To modify an existing entry, click on an entry from the list. The form will be populated with details from the selected entry. The user can modify the form and click submit to complete the modification of an entry. To delete an entry the user can click on the delete button to the right of any existing entry in the list. There is a logout button located at the top of the webpage. Once logged out this is a good time for registered users to test the login button.
 
 ## Source Code
