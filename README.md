@@ -17,6 +17,12 @@ Upon visiting the web page, the user will encounter the home page with the optio
 Please refer to the branch PaymentWithAuth for grading purposes.
 My Repository contains two folders containing source code. The Payment folder contains my Web API source code created using ASP.NET Core. The testingAngular folder contains my source code created using Angular.
 
+## Sources
+I borrowed code and or ideas from the following sources:
+https://www.youtube.com/watch?v=fom80TujpYQ&t=4834s
+https://www.youtube.com/watch?v=mArXOf0daQ4
+https://github.com/codewithsrini/Angular-6-Firebase-Using-Own-Email-Password
+
 
 
 
